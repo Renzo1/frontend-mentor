@@ -1,0 +1,233 @@
+/* General design template */
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+section{
+  padding: 5rem 0;
+}
+
+header>*, section>*{
+  width: 80%;
+  margin: auto
+}
+
+a{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: black;
+}
+
+h1, h2, h3, p{
+  margin: 1.6rem auto;
+}
+
+h1{
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+
+h2{
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+p{
+  color: #7F8487;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+img{
+  height: auto;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-item: center;
+  margin: auto;
+}
+
+
+/* Header */
+
+header{
+  background: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.top-logo-container{
+  display: flex;
+  justify-content: center;
+}
+
+.top-logo{
+  width: 12rem;
+  padding-top: 10rem;
+}
+
+.page-title{
+  text-align: center;
+  margin-top: 10rem;
+  color: #2C3333;
+}
+
+.website-use{
+  width: 45%;
+  text-align: center;
+}
+
+.btn-row{
+  align-item: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+
+.download-btn{
+  border-radius: 5rem;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  font-family: 'Bai Jamjuree', sans-serif;
+  margin: 3rem 0.75rem;
+  padding: 1.4rem 4rem;
+  box-shadow: -6px 8px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.download-btn.ios{
+  background-color: hsl(171, 66%, 44%);
+}
+.download-btn.mac{
+  background-color: hsl(233, 100%, 69%);
+}
+
+/* Section 2: Keep track */
+.section-header{
+  text-align: center;
+  color: #2C3333;
+}
+.opening-parag{
+  text-align: center;
+  color: #7F8487;
+  width: 45%;
+  line-height: 1.25;
+  margin-bottom: 5rem;
+}
+
+.desktop-section{
+  margin-top: 10rem;
+}
+.desktop-image{
+  position: relative;
+  transform: scale(1);
+  width: 110%;
+  right: 20rem;
+}
+.list-beside-desktop{
+  padding: 0 2rem 0 0;
+}
+
+.list-item-beside-desktop{
+  margin: 5rem 5rem 5rem 0;
+}
+
+/* Section 3: Access clipboard  */
+.access-clipboard{
+  padding: 5rem 0;
+}
+.mobile-gadget{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Section 4 workflow */
+.workflow .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0rem;
+}
+.workflow-items{
+  display: flex;
+  flex: 1 1 0; /*grow shrink basis */
+  margin: 1rem;
+}
+.workflow-sub-items{
+  text-align: center;
+}
+.client-logo{
+  display: flex;
+  flex: 1 1 0;
+  margin: 3rem;
+}
+.workflow-icons{
+  width: 4rem;
+}
+.row.clients{
+  margin-top: 5rem;
+}
+
+/* Section 5: Clipboard for iOS and Mac OS (refactored) */
+
+/* Footer */
+.footer-items{
+  background-color: #f2f4f7;
+  display: flex;
+}
+.footer-items>*{
+  display: flex;
+  flex: 1 1 auto;
+}
+.bottom-logo{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 7.5rem;
+}
+.bottom-logo-small{
+  width: 7rem;
+}
+.row.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.footer-link{
+  display: flex;
+  width: 20rem;
+  margin: 1.5rem 2.5rem;
+}
+.social-icons{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 20%;
+}
+.socials{
+  width: 2.5rem;
+  margin: 1rem;
+}
